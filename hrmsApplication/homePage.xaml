@@ -1,0 +1,33 @@
+﻿<Window x:Class="hrmsApplication.homePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hrmsApplication"
+        mc:Ignorable="d"
+        Title="HR Application" Height="700" Width="800" ResizeMode="NoResize" >
+    
+    <Grid x:Name="home" >
+        <Menu HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="800" Background="#FF5B6C91" Margin="0,0,0,0">
+    
+
+    <MenuItem Header="File" FontSize="18" Name="menu_File">
+                <MenuItem Header="Register Employee" Name="menu_RegEmployee" Click="Menu_RegEmployee_Click"/>
+                <MenuItem Header="Register Department" Name="menu_RegDepartment" Click="Menu_RegDepartment_Click"/>
+                <MenuItem Header="Register Country" Name="menu_RegCountry"/>
+                <MenuItem Header="Exit" Name="menu_Exit"/>
+            </MenuItem>
+
+            <MenuItem Header="View" FontSize="18" Name="menu_View" >
+                <MenuItem Header="Zoom in" Name="menu_ZoomIn"/>
+            </MenuItem>
+
+            <MenuItem Header="Help" FontSize="18" Name="menu_Help" >
+                <MenuItem Header="About us" Name="menu_AboutUs"/>
+            </MenuItem>
+
+        </Menu>
+
+    </Grid>
+    
+</Window>
